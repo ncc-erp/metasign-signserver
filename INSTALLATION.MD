@@ -281,7 +281,7 @@ $ sudo bin/signserver wsadmins -allowany
 
 # 5. Setup CryptoWorker and PDFSigner to sign documents
 
-Please follow instructions in this video: https://www.youtube.com/watch?v=sNIv0nYRs1g
+Please follow instructions in this video: [Container Signing with SignServer and Cosign](https://www.youtube.com/watch?v=sNIv0nYRs1g)
 
 
 
