@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SignServer-Module-OpenPGP" />
+        <module name="SignServer-Module-XAdES" />
+        <module name="SignServer-Test-ClientWS" />
+        <module name="SignServer-ejb-AdminWS" />
+        <module name="SignServer-Client-SignServerWS" />
+        <module name="SignServer-Healthcheck-web" />
+        <module name="SignServer-Test-Renewal" />
+        <module name="SignServer-AdminCLI" />
+        <module name="SignServer-Module-Log4j" />
+        <module name="SignServer-Client-ClientWS" />
+        <module name="SignServer-Module-Renewal" />
+        <module name="SignServer-Admin-Common" />
+        <module name="SignServer-ejb-ValidationWS" />
+        <module name="SignServer-Test-Utils" />
+        <module name="SignServer-Test-AdminWS" />
+        <module name="SignServer-Client-SigningAndValidationAPI" />
+        <module name="SignServer-OpenPGP-Common" />
+        <module name="SignServer-Client-CLI" />
+        <module name="SignServer-Server" />
+        <module name="SignServer-Test-Random" />
+        <module name="SignServer-Module-PDFSigner" />
+        <module name="SignServer-Lib-ODFDOM" />
+        <module name="SignServer-Admin-web" />
+        <module name="SignServer-Module-MRTDSODSigner" />
+        <module name="SignServer-Module-Renewal-interfaces" />
+        <module name="SignServer-Web-Common" />
+        <module name="SignServer-Compile" />
+        <module name="SignServer-MetaSign" />
+        <module name="SignServer-Module-CMSSigner" />
+        <module name="SignServer-Module-XMLSigner" />
+        <module name="SignServer-CLI-Common" />
+        <module name="SignServer-Module-SignerStatusReport" />
+        <module name="SignServer-Module-XMLValidator" />
+        <module name="SignServer-ejb-interfaces" />
+        <module name="SignServer-Test-Performance" />
+        <module name="SignServer-CESeCore-jars" />
+        <module name="SignServer-Test-System" />
+        <module name="SignServer-core-web" />
+        <module name="SignServer-Common" />
+        <module name="SignServer-core-ejb" />
+        <module name="SignServer-Lib-OpenXML4J" />
+        <module name="SignServer-Test-P11" />
+        <module name="SignServer-Doc-web" />
+        <module name="SignServer-Module-MRTDSigner" />
+        <module name="SignServer-Client-ValidationCLI" />
+        <module name="SignServer-Module-TSA" />
+        <module name="SignServer-ClientWS-web" />
+        <module name="SignServer-SignServerWS-web" />
+        <module name="SignServer-Entities" />
+        <module name="SignServer-Module-OOXMLSigner" />
+        <module name="SignServer-Module-JArchive" />
+        <module name="SignServer-Test-SignServerWS" />
+        <module name="SignServer-Module-DpkgSig" />
+        <module name="SignServer-Test-ValidationWS" />
+        <module name="SignServer-Module-StatusProperties" />
+        <module name="SignServer-Module-ODFSigner" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SignServer-Admin-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-Admin-web\target/endorsed" />
+      <module name="SignServer-ClientWS-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-ClientWS-web\target/endorsed" />
+      <module name="SignServer-Doc-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-Doc-web\target/endorsed" />
+      <module name="SignServer-Healthcheck-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-war-Healthcheck\target/endorsed" />
+      <module name="SignServer-MetaSign" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-MetaSign\target/endorsed" />
+      <module name="SignServer-SignServerWS-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-SignServerWS-web\target/endorsed" />
+      <module name="SignServer-core-ejb" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-ejb\target/endorsed" />
+      <module name="SignServer-core-web" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-war\target/endorsed" />
+      <module name="SignServer-ejb-AdminWS" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-ejb-AdminWS\target/endorsed" />
+      <module name="SignServer-ejb-ValidationWS" options="-endorseddirs C:\Users\duy.nguyenthe\Desktop\SignServer\signserver\modules\SignServer-ejb-ValidationWS\target/endorsed" />
+    </option>
+  </component>
+</project>

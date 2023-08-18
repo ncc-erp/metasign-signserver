@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:remove>
+    <!--
+    /*************************************************************************
+    *                                                                       *
+    *  SignServer: The OpenSource Automated Signing Server                  *
+    *                                                                       *
+    *  This software is free software; you can redistribute it and/or       *
+    *  modify it under the terms of the GNU Lesser General Public           *
+    *  License as published by the Free Software Foundation; either         *
+    *  version 2.1 of the License, or any later version.                    *
+    *                                                                       *
+    *  See terms of license at gnu.org.                                     *
+    *                                                                       *
+    *************************************************************************/
+
+    Version: $Id$
+    -->
+    </ui:remove>
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="/signserver/adminweb/javax.faces.resource/images/favicon.png.xhtml?ln=#{adminWebBean.theme}"/>
+        <h:outputStylesheet library="#{adminWebBean.theme}" name="css/default.css"/>
+        <h:outputStylesheet library="#{adminWebBean.theme}" name="css/cssLayout.css"/>
+        <title><ui:insert name="title">Title</ui:insert><h:outputText value=" - #{text['SignServer_Admin_Web']}"/></title>
+    </h:head>
+
+    <h:body>
+        
+        <div id="top">
+            <header class="kfds-header-container">
+                <div class="kfds-header-left">
+                  <div class="kfds-header-brand">
+                    <div class="kfds-header-logo">
+                        <h:outputLink class="logo-link" value="../"><h:graphicImage library="#{adminWebBean.theme}" name="images/logo.svg"/></h:outputLink>  
+                    </div>
+                  </div>
+
+                </div>
+                <div class="kfds-header-right">
+                    <ul class="SS_infoList">
+                        <li class="SS_infoItem">
+                            <label>
+                                <h:outputText value="#{text['User_COLON']}"/>
+                            </label>
+                            <div class="mx-0.5">
+                                <h:outputText value="#{text['n/a']}"/>
+                            </div>
+                        </li>
+        
+                        <li class="SS_infoItem">
+                            <label>
+                                <h:outputText value="#{text['Node_COLON']}"/>
+                            </label>
+                            <div class="mx-0.5">
+                                <h:outputText value="#{adminWebBean.node}"/>
+                            </div>
+                        </li>
+        
+                        <li class="SS_infoItem">
+                            <label>
+                                <h:outputText value="#{text['Server_Time_COLON']}"/>
+                            </label>
+                            <div class="mx-0.5">
+                                <h:outputText value="#{adminWebBean.currentTime}"/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              </header>   
+
+            <div class="clearBoth"></div>
+            
+            <div id="top-menu">
+                <ul>
+                    <li class="last">
+                        <h:outputLink value="#{adminWebBean.documentationLink}" class="topOutsideLink">#{text['Documentation']}</h:outputLink>
+                    </li>
+                </ul>
+                <ui:insert name="top">Top</ui:insert>
+            </div>
+        </div>
+        <div>
+            <div id="content" class="full_content">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+        </div>
+        <div id="bottom">
+            <ui:insert name="bottom">Bottom</ui:insert>
+            
+            <p class="bottomText">
+                <h:outputText value="#{adminWebBean.copyright}"/>
+            </p>
+        </div>
+
+    </h:body>
+
+</html>

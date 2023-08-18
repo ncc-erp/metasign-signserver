@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <ui:remove>
+    <!--
+    /*************************************************************************
+    *                                                                       *
+    *  SignServer: The OpenSource Automated Signing Server                  *
+    *                                                                       *
+    *  This software is free software; you can redistribute it and/or       *
+    *  modify it under the terms of the GNU Lesser General Public           *
+    *  License as published by the Free Software Foundation; either         *
+    *  version 2.1 of the License, or any later version.                    *
+    *                                                                       *
+    *  See terms of license at gnu.org.                                     *
+    *                                                                       *
+    *************************************************************************/
+
+    Version: $Id$
+    -->
+    </ui:remove>
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="shortcut icon" type="image/png" href="/signserver/javax.faces.resource/images/favicon.png.xhtml?ln=#{publicWebBean.theme}"/>
+        <h:outputStylesheet library="#{publicWebBean.theme}" name="css/default.css"/>
+        <h:outputStylesheet library="#{publicWebBean.theme}" name="css/cssLayout.css"/>
+        <h:outputStylesheet library="#{publicWebBean.theme}" name="css/publicweb.css"/>
+        <title><ui:insert name="title">Title</ui:insert><h:outputText value=" - SignServer"/></title>
+        <h:outputScript library="default" name="js/adminweb.js"/>
+        <h:outputScript library="default" name="js/ejbca-common.js"/>
+    </h:head>
+
+    <h:body>
+        
+        <div id="top">
+            <header class="kfds-header-container">
+                <div class="kfds-header-left">
+                  <div class="kfds-header-brand">
+                    <div class="kfds-header-logo">
+                        <h:outputLink class="logo-link" value="#{startPage ? '.' : '../'}"><h:graphicImage library="#{publicWebBean.theme}" name="images/logo.svg"/></h:outputLink>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="kfds-header-right">
+                    <ul class="SS_infoList">
+                        <li class="SS_infoItem">
+                            <label>
+                                <h:outputText value="#{text['Node_COLON']}"/>
+                            </label>
+                            <div class="mx-0.5">
+                                <h:outputText value="#{publicWebBean.node}"/> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <div class="clearBoth"></div>
+
+            <h:panelGroup id="top-menu" layout="block" rendered="#{activeMenu != null and activeMenu != ''}"> 
+                <ul>
+                    <li>
+                        <h:link outcome="genericfile" class="#{activeMenu == 'genericfile' ? 'active' : ''}"><h:outputText value="#{text['File_Upload']}"/></h:link>
+                    </li>
+                    <li>
+                        <h:link outcome="genericdirect" class="#{activeMenu == 'genericdirect' ? 'active' : ''}"><h:outputText value="#{text['Direct_Input']}"/></h:link>
+                    </li>
+                    <li>
+                        <h:link outcome="mrtdsod" class="#{activeMenu == 'more-signing-options' ? 'active' : ''}"><h:outputText value="#{text['More_Signing_Options']}"/></h:link>
+                    </li>
+                    <li class="last">
+                        <h:panelGroup rendered="#{publicWebBean.webDocEnabled}">
+                            <h:outputLink value="#{publicWebBean.documentationLink}" class="topOutsideLink"><h:outputText value="#{text['Documentation']}"/></h:outputLink>
+                        </h:panelGroup>
+                        <h:panelGroup rendered="#{!publicWebBean.webDocEnabled}">
+                            <h:outputLink value="#{publicWebBean.documentationLink}" class="topOutsideLink"><h:outputText value=""/></h:outputLink>
+                        </h:panelGroup>
+                    </li>
+                </ul>
+                <ui:insert name="top">Top</ui:insert>
+            </h:panelGroup>
+        </div>
+        <div>
+            <div id="content" class="full_content">
+                <ui:insert name="content">Content</ui:insert>
+            </div>
+        </div>
+        <div id="bottom">
+            <ui:insert name="bottom">Bottom</ui:insert>
+            
+            <p class="bottomText">
+                <h:outputText value="#{publicWebBean.copyright}"/>
+            </p>
+        </div>
+
+    </h:body>
+
+</html>

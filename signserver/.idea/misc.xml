@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="ejb" url="file://$PROJECT_DIR$/modules/SignServer-ejb" />
+    <file type="ejb" url="file://$PROJECT_DIR$/modules/SignServer-ejb-AdminWS" />
+    <file type="ejb" url="file://$PROJECT_DIR$/modules/SignServer-ejb-ValidationWS" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-Admin-web" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-ClientWS-web" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-Doc-web" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-MetaSign" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-SignServerWS-web" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-war" />
+    <file type="web" url="file://$PROJECT_DIR$/modules/SignServer-war-Healthcheck" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

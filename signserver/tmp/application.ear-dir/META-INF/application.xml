@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application version="7" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd">
+    <display-name>SignServer</display-name>
+
+    
+    <!-- Enabled: openpgpcommon -->
+    <!-- Enabled: signservercommon -->
+    <!-- Enabled: signserverejb -->
+    <module>
+        <ejb>SignServer-ejb.jar</ejb>
+    </module>
+    <!-- Enabled: module.cesecore -->
+    <module>
+        <ejb>cesecore-ejb-7.0.0.1.jar</ejb>
+    </module>
+    <!-- Enabled: adminws -->
+    <module>
+        <ejb>SignServer-ejb-AdminWS-5.11.2.Alpha1-SNAPSHOT.jar</ejb>
+    </module>
+    <!-- Enabled: clientws -->
+    <module>
+        <web>
+            <web-uri>SignServer-ClientWS-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/ClientWSService</context-root>
+        </web>
+    </module>
+    <!-- Enabled: signserverws -->
+    <module>
+        <web>
+            <web-uri>SignServer-SignServerWS-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/SignServerWSService</context-root>
+        </web>
+    </module>
+    <!-- Enabled: validationws -->
+    <module>
+        <ejb>SignServer-ejb-ValidationWS-5.11.2.Alpha1-SNAPSHOT.jar</ejb>
+    </module>
+    <!-- Enabled: adminweb -->
+    <module>
+        <web>
+            <web-uri>SignServer-Admin-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/adminweb</context-root>
+        </web>
+    </module>
+    <!-- Enabled: healthcheck -->
+    <module>
+        <web>
+            <web-uri>SignServer-Healthcheck-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/healthcheck</context-root>
+        </web>
+    </module>
+    <!-- Enabled: metasign -->
+    <module>
+        <web>
+            <web-uri>SignServer-MetaSign-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/metasign</context-root>
+        </web>
+    </module>
+    <!-- Enabled: module.log4j -->
+    <!-- Enabled: signserverweb -->
+    <module>
+        <web>
+            <web-uri>SignServer-core-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver</context-root>
+        </web>
+    </module>
+    <!-- Enabled: webdoc -->
+    <module>
+        <web>
+            <web-uri>SignServer-Doc-web-5.11.2.Alpha1-SNAPSHOT.war</web-uri>
+            <context-root>/signserver/doc</context-root>
+        </web>
+    </module>
+    <!-- Enabled: module.cmssigner -->
+    <!-- Enabled: module.dpkgsig -->
+    <!-- Enabled: module.jarchive -->
+    <!-- Enabled: module.mrtdsigner -->
+    <!-- Enabled: module.mrtdsodsigner -->
+    <!-- Enabled: module.odfsigner -->
+    <!-- Enabled: module.ooxmlsigner -->
+    <!-- Enabled: module.openpgp -->
+    <!-- Enabled: module.pdfsigner -->
+    <!-- Enabled: module.renewal -->
+    <!-- Enabled: module.signerstatusreport -->
+    <!-- Enabled: module.statusproperties -->
+    <!-- Enabled: module.tsa -->
+    <!-- Enabled: module.xades -->
+    <!-- Enabled: module.xmlsigner -->
+    <!-- Enabled: module.xmlvalidator -->
+</application>

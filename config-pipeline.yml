@@ -1,0 +1,26 @@
+trigger: 
+- duynt
+
+pool:
+  name: 'Devops'
+
+jobs: 
+- job: SignServer
+  steps:
+    - script: |
+        cd signserver
+        mvn clean install -DskipTests
+#        mvn clean install -DskipTests -P autoInstallPackage -Dmaven.wagon.http.ssl.insecure=true -Dmaven.wagon.http.ssl.allowall=true
+      displayName: 'Build SignServer' 
+       
+    - script: |
+        cd signserver
+        zip -r signserver.zip *
+      displayName: 'Compress SignServer'
+
+    - task: PublishBuildArtifacts@1
+      inputs:
+        PathtoPublish: 'signserver/signserver.zip'
+        ArtifactName: 'signserver-dev-EC'
+        publishLocation: 'Container'
+      displayName: 'Publish Compress SignServer to Aritifact'
