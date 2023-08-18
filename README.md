@@ -4,7 +4,7 @@ This version is updated from [Keyfactor / signserver-ce](https://github.com/Keyf
 
 ## Get started 
 
-To get started with SignServer, clone this project and build it yourself by following these instructions.
+To get started with SignServer, clone this project and build it yourself by following [these instructions](https://github.com/ncc-erp/metasign-signserver/blob/main/INSTALLATION.MD).
 
 ## License
 SignServer Community is licensed under the LGPL license, please see **[LICENSE](LICENSE)**. 
