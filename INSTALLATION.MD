@@ -185,7 +185,7 @@ $ cd keystore
 $ sudo keytool -genkeypair -alias httpsKeystorePassword -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12
 $ sudo keytool -genkeypair -alias httpsTruststorePassword -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore truststore.p12
 ````
-(You will be asked to enter password for these fiels, keep them to use later)
+(You will be asked to enter password for these fields, keep them to use later)
 
 ## H. Edit standalone.xml
 ````
@@ -216,10 +216,10 @@ $ sudo keytool -import -alias myca -file ManagementCA.pem -keystore truststore.p
 # 4. Install SignServer
 
 ## A. Clone source code
-Clone from the `dev` branch: [SignServer - Repos](https://ops.nccsoft.vn/DefaultCollection/EContract/_git/SignServer?path=%2F&version=GBdev&_a=contents)
+Clone source code from this repo: [SignServer - Repos](https://github.com/ncc-erp/metasign-signserver/)
 
 ## B. Build SignServer
-Go to SignServer directory
+Go to `signserver` directory
 
 #### Ensure Secure Maven Installation
 ````
@@ -279,7 +279,9 @@ $ sudo bin/ant deploy
 $ sudo bin/signserver wsadmins -allowany
 ````
 
+# 5. Setup CryptoWorker and PDFSigner to sign documents
 
+Please follow instructions in this video: https://www.youtube.com/watch?v=sNIv0nYRs1g
 
 
 
